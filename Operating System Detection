@@ -1,0 +1,25 @@
+# 5. Operating System Detection
+
+## Objective
+
+Identify the operating system of the target.
+
+## Command
+
+```bash
+sudo nmap -O <TARGET-IP>
+```
+
+## Output File
+
+```bash
+sudo nmap -O <TARGET-IP> -oN raw-output/os-detection.txt
+```
+
+## Explanation
+
+- `-O` enables OS fingerprinting.
+- Estimates the operating system.
+- Displays confidence level.
+
+---
