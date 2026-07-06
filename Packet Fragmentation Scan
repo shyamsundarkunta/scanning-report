@@ -1,0 +1,25 @@
+# 8. Packet Fragmentation Scan
+
+## Objective
+
+Test simple firewall evasion.
+
+## Command
+
+```bash
+sudo nmap -f <TARGET-IP>
+```
+
+## Output File
+
+```bash
+sudo nmap -f <TARGET-IP> -oN raw-output/fragmentation-scan.txt
+```
+
+## Explanation
+
+- `-f` fragments packets into smaller pieces.
+- May bypass poorly configured firewalls.
+- Useful for IDS/Firewall evasion testing.
+
+---
