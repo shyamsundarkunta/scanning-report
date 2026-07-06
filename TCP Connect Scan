@@ -1,0 +1,25 @@
+# 7. TCP Connect Scan
+
+## Objective
+
+Compare SYN scan with a full TCP connection scan.
+
+## Command
+
+```bash
+nmap -sT <TARGET-IP>
+```
+
+## Output File
+
+```bash
+nmap -sT <TARGET-IP> -oN raw-output/tcp-connect-scan.txt
+```
+
+## Explanation
+
+- `-sT` completes the TCP three-way handshake.
+- Easier to detect.
+- Works without root privileges.
+
+---
