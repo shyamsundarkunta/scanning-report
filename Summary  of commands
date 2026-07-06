@@ -1,0 +1,13 @@
+# Summary of Commands
+
+| Scan | Command |
+|------|---------|
+| Host Discovery | `nmap -sn <TARGET-IP>` |
+| Full TCP Scan | `nmap -p- <TARGET-IP>` |
+| Service Detection | `nmap -sV <TARGET-IP>` |
+| Banner Grab | `nc <TARGET-IP> 80` / `curl -I http://<TARGET-IP>` |
+| OS Detection | `sudo nmap -O <TARGET-IP>` |
+| SYN Scan | `sudo nmap -sS <TARGET-IP>` |
+| TCP Connect Scan | `nmap -sT <TARGET-IP>` |
+| Fragmentation | `sudo nmap -f <TARGET-IP>` |
+| Slow Timing | `sudo nmap -T2 <TARGET-IP>` |
