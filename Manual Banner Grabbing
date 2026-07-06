@@ -1,0 +1,29 @@
+# 4. Manual Banner Grabbing
+
+## Objective
+
+Verify Nmap's service detection manually.
+
+## Using Netcat
+
+```bash
+nc <TARGET-IP> 80
+```
+
+## Using curl
+
+```bash
+curl -I http://<TARGET-IP>
+```
+
+## Output File
+
+```
+raw-output/banner-grab.txt
+```
+
+## Explanation
+
+Banner grabbing confirms the actual service running on a port and validates Nmap's version detection.
+
+---
