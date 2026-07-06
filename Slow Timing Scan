@@ -1,0 +1,26 @@
+# 9. Slow Timing Scan
+
+## Objective
+
+Reduce the likelihood of IDS detection.
+
+## Command
+
+```bash
+sudo nmap -T2 <TARGET-IP>
+```
+
+## Output File
+
+```bash
+sudo nmap -T2 <TARGET-IP> -oN raw-output/timing-scan.txt
+```
+
+## Explanation
+
+- `-T2` uses a polite timing template.
+- Sends packets more slowly.
+- Helps avoid triggering IDS/IPS systems.
+- Increases scan duration.
+
+---
