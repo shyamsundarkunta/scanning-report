@@ -1,0 +1,26 @@
+# 3. Service & Version Detection
+
+## Objective
+
+Identify services and software versions running on open ports.
+
+## Command
+
+```bash
+nmap -sV <TARGET-IP>
+```
+
+## Output File
+
+```bash
+nmap -sV <TARGET-IP> -oN raw-output/service-version.txt
+```
+
+## Explanation
+
+- `-sV` probes each open port.
+- Detects service name.
+- Detects software version.
+- Helps identify outdated or vulnerable software.
+
+---
