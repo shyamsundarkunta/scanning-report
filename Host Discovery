@@ -1,0 +1,24 @@
+# 1. Host Discovery
+
+## Objective
+Identify live hosts within the target network.
+
+## Command
+
+```bash
+nmap -sn <TARGET-IP>
+```
+
+## Output File
+
+```bash
+nmap -sn <TARGET-IP> -oN raw-output/host-discovery.txt
+```
+
+## Explanation
+
+- `-sn` : Performs host discovery only.
+- Skips port scanning.
+- Determines whether the host is alive.
+
+---
