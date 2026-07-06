@@ -1,0 +1,24 @@
+# 2. Full TCP Port Scan
+
+## Objective
+
+Discover every TCP port on the target.
+
+## Command
+
+```bash
+nmap -p- <TARGET-IP>
+```
+
+## Output File
+
+```bash
+nmap -p- <TARGET-IP> -oN raw-output/full-port-scan.txt
+```
+
+## Explanation
+
+- `-p-` scans all **65,535 TCP ports**.
+- Used to identify every open TCP service.
+
+---
