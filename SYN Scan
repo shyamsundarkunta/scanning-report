@@ -1,0 +1,26 @@
+# 6. SYN Scan
+
+## Objective
+
+Perform a stealth TCP scan.
+
+## Command
+
+```bash
+sudo nmap -sS <TARGET-IP>
+```
+
+## Output File
+
+```bash
+sudo nmap -sS <TARGET-IP> -oN raw-output/syn-scan.txt
+```
+
+## Explanation
+
+- `-sS` performs a SYN scan.
+- Faster than TCP Connect.
+- More stealthy.
+- Requires root privileges.
+
+---
